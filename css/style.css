@@ -1,0 +1,227 @@
+/* CSS GENERAL */
+
+* { /* reseteo de css */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html { /* le da una misma tipografia a todo el documento html */
+  font-family: 'Montserrat', sans-serif;
+}
+
+p {
+  line-height: 20px;
+}
+
+.section_titulo { /* le da estilo a los titulos de cada página html */
+  color: rgb(154, 127, 99);
+  font-size: 25px;
+  font-weight: bolder;
+  letter-spacing: 3px;
+  font-family: 'Bebas Neue', normal;
+  margin: 4px 6px;
+}
+
+/* NAV BAR */
+
+nav { /* le da un fondo de color a la nav bar */
+  background-color: #dfa8a8;
+}
+
+.nav_list { /* habilita flexbox en la nav bar */
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.nav_item { /* le da la ubicacion deseada a los botones de la nav */
+  margin: 1px 4px;
+}
+
+nav ul li:hover { /* le da efecto a los botones de la nav */
+  box-shadow: 0px 2px 0px rgb(255, 255, 255);
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+nav ul li a { /* le da estilo a los botones de la nav */
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-family: 'Bebas Neue', normal;
+  font-size: 120%;
+}
+
+/* FOOTER */
+
+footer { /* le da un fondo de color al footer */
+  /* footer color anterior >> background-color: rgb(44, 68, 51); */
+  background-image: linear-gradient(to bottom, rgb(36, 51, 32),rgb(44, 68, 51));
+}
+
+.footer { /* habilita flexbox en el footer */
+  display: flex;
+  justify-content: space-between;
+}
+
+footer div { /* le da color al texto dentro del footer y la ubicacion deseada */
+  color: rgb(255, 255, 255);
+  margin: 0px 0px;
+  padding: 2px 4px 0px 4px;
+}
+
+/* INDEX */
+
+.contenedor_imagen { /* le da una imagen de fondo al index y la posicion deseada */
+  background-image: url(../images/imagenPrincipal3.jpg);
+  background-size: cover;
+  position: relative;
+  text-align: center;
+  padding: 23em;
+}
+
+.inicio_titulo { /* le da estilo y posicion al texto del index */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #dfa8a8;
+  font-weight: bolder;
+  letter-spacing: 10px;
+  font-size: 500%;
+  text-align: center;
+  font-family: 'Bebas Neue', normal;
+}
+
+.inicio_subtitulo { /* le da estilo y posicion al subtexto del index */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(255, 255, 255);
+  font-size: 120%;
+  text-align: center;
+  font-style: oblique;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* NOSOTROS */
+
+.contenedor_nosotros { /* habilita flexbox en la pagina nosotros */
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 262.3px 6px;
+}
+
+span { /* cursiva para "valle cálido" */
+  font-style: oblique;
+}
+
+.nosotros_video { /* posiciona y estila el video en la pagina nosotros */
+  border: 4px solid rgb(154, 127, 99);
+  padding: 0px;
+  margin: 2px 50px 0px 0px;
+}
+
+.nosotros_descripcion { /* posiciona el texto en la pagina nosotros */
+  margin: 6px 20px;
+}
+
+#nosotros_video { /* posiciona el video en la pagina nosotros */
+  margin: 6px 20px;
+}
+
+/* MENU */
+
+.menu_subtitulo { /* le da estilo a los subtitulos del menú */
+  background-color: rgb(44, 68, 51);
+  color: rgb(255, 255, 255);
+  text-transform: lowercase;
+  font-weight: bolder;
+  letter-spacing: 3px;
+  font-style: oblique;
+}
+
+.menu_lista { /* le da estilo a la lista del menú */
+  font-weight: 500;
+  line-height: 20px;
+  list-style-type: none;
+}
+
+.menu_imagenes img { /* le da un borde de color a las imagenes del menú */
+  border: 4px solid rgb(154, 127, 99);
+}
+
+.menu_imagenes { /* posiciona las imagenes en el lugar deseado */
+  margin: 0px 0px 0px 40px;
+}
+
+.contenedor_menu { /* habilita flexbox en la pagina menu */
+  display: flex;
+  flex-flow: wrap;
+  margin: 25px 4px 25px 4px;
+  justify-content: center;
+}
+
+.menu_opciones { /* posiciona el texto del menu en el lugar deseado */
+  align-self: center;
+}
+
+/* TALLERES */
+
+.talleres_descripcion { /* posiciona el texto de talleres en el lugar deseado */
+  margin: 6px 6px;
+  align-self: center;
+}
+
+.talleres_imagenes img { /* le da un borde a las imagenes */
+  border: 4px solid rgb(154, 127, 99);
+  padding: 0px;
+}
+
+.talleres_imagenes { /* genera espacio entre las imagenes */
+  padding: 5px;
+}
+
+.contenedor_talleres { /* habilita flexbox en la pagina talleres */
+  display: flex;
+  justify-content: center;
+  flex-flow: wrap;
+  margin: 169px 6px 169px 6px;
+}
+
+/* CONTACTO */
+
+.contenedor_contacto { /* habilita flexbox en la pagina contacto */
+  display: flex;
+  flex-flow: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 95px 6px 95px 6px;
+}
+
+.contacto_info { /* posiciones el texto de la pagina contacto */
+  text-align: center;
+  margin: 0px 25px;
+}
+
+.contacto_mapa { /* le da un borde y posiciones el mapa en la pagina contacto */
+  border: 4px solid rgb(154, 127, 99);
+  margin: 0px 25px;
+}
+
+.boton { /* Le da estilo a los botones del formulario */
+  background-color: rgb(154, 127, 99);
+  color: rgb(255, 255, 255);
+  font-weight: bolder;
+  padding: 5px;
+  margin: 0px 0px 5px 0px;
+}
+
+.contacto_data { /* posiciona los cuadros de texto de la pagina contacto */
+  margin: 40px 0px;
+}

@@ -96,7 +96,7 @@ footer div { /* le da color al texto dentro del footer y la ubicacion deseada */
   background-size: cover;
   position: relative;
   text-align: center;
-  padding: 23em;
+  padding: 19.3em;
 }
 
 .inicio_titulo { /* le da estilo y posicion al texto del index */
@@ -131,7 +131,7 @@ footer div { /* le da color al texto dentro del footer y la ubicacion deseada */
   flex-flow: wrap;
   justify-content: center;
   align-items: center;
-  margin: 262.3px 6px;
+  margin: 197px 6px;
 }
 
 span { /* cursiva para "valle cálido" */
@@ -167,6 +167,8 @@ span { /* cursiva para "valle cálido" */
   font-weight: 500;
   line-height: 20px;
   list-style-type: none;
+  padding: 0px 2px;
+  margin: 0px 20px;
 }
 
 .menu_imagenes img { /* le da un borde de color a las imagenes del menú */
@@ -174,18 +176,30 @@ span { /* cursiva para "valle cálido" */
 }
 
 .menu_imagenes { /* posiciona las imagenes en el lugar deseado */
-  margin: 0px 0px 0px 40px;
+  margin: 0px 20px;
 }
 
 .contenedor_menu { /* habilita flexbox en la pagina menu */
   display: flex;
   flex-flow: wrap;
-  margin: 25px 4px 25px 4px;
+  margin: 66px 4px;
   justify-content: center;
 }
 
+.menu_opciones_dos { /* posiciona el texto del menu en el lugar deseado */
+margin: 0px 10px;
+}
+
 .menu_opciones { /* posiciona el texto del menu en el lugar deseado */
-  align-self: center;
+  margin: 0px 10px;
+  }
+
+.menu_frio {
+  margin: 24px 0px 0px 0px;
+}
+
+.menu_salado {
+  margin: 5px 0px 0px 0px;
 }
 
 /* TALLERES */
@@ -208,7 +222,7 @@ span { /* cursiva para "valle cálido" */
   display: flex;
   justify-content: center;
   flex-flow: wrap;
-  margin: 169px 6px 169px 6px;
+  margin: 66px 6px 66px 6px;
 }
 
 /* CONTACTO */
@@ -218,17 +232,15 @@ span { /* cursiva para "valle cálido" */
   flex-flow: wrap;
   align-items: center;
   justify-content: center;
-  margin: 95px 6px 95px 6px;
+  margin: 30px 6px 30px 6px;
 }
 
 .contacto_info { /* posiciones el texto de la pagina contacto */
   text-align: center;
-  margin: 0px 25px;
 }
 
 .contacto_mapa { /* le da un borde y posiciones el mapa en la pagina contacto */
   border: 4px solid rgb(154, 127, 99);
-  margin: 0px 25px;
 }
 
 .boton { /* Le da estilo a los botones del formulario */

@@ -46,7 +46,7 @@
                 <li>té</li>
             </ul>
         </div>
-        <div>
+        <div class="menu_frio">
             <h3 class="menu_subtitulo">Frio</h3>
             <ul class="menu_lista">
                 <li>limonada</li>
@@ -55,37 +55,64 @@
                 <li>chocolatada</li>
             </ul>
         </div>
-        <div>
-            <h3 class="menu_subtitulo">Dulce</h3>
-            <ul class="menu_lista">
-                <li>alfajor de mousse</li>
-                <li>tostadas con queso y mermelada</li>
-                <li>marquisse de choco amargo</li>
-                <li>carrot cake</li>
-                <li>cheesecake</li>
-                <li>brownie con praliné</li>
-                <li>croissant</li>
-                <li>roll de arándanos</li>
-                <li>pain au chocolat</li>
-            </ul>
         </div>
-        <div>
-            <h3 class="menu_subtitulo">Salado</h3>
-            <ul class="menu_lista">
-                <li>chipapa</li>
-                <li>chipapa relleno</li>
-                <li>tostada caprese</li>
-                <li>tostada yunga</li>
-                <li>burger + papas</li>
-            </ul>
-        </div>
+        <div class="menu_opciones_dos"> 
+            <div>
+                <h3 class="menu_subtitulo">Dulce</h3>
+                <ul class="menu_lista">
+                    <li>alfajor de mousse</li>
+                    <li>tostadas con queso y mermelada</li>
+                    <li>marquisse de choco amargo</li>
+                    <li>carrot cake</li>
+                    <li>cheesecake</li>
+                    <li>brownie con praliné</li>
+                    <li>croissant</li>
+                    <li>roll de arándanos</li>
+                    <li>pain au chocolat</li>
+                </ul>
+            </div>
+            <div class="menu_salado">
+                <h3 class="menu_subtitulo">Salado</h3>
+                <ul class="menu_lista">
+                    <li>chipapa</li>
+                    <li>chipapa relleno</li>
+                    <li>tostada caprese</li>
+                    <li>tostada yunga</li>
+                    <li>burger + papas</li>
+                </ul>
+            </div>
         </div>
         <div class="menu_imagenes"> 
-            <img src="../images/Plato1.jpg" alt="Plato1" height="320" width="290">
-            <img src="../images/Plato3.jpg" alt="Plato3" height="320" width="290">
-            <br>
-            <img src="../images/Plato5.jpg" alt="Plato5" height="320" width="290">
-            <img src="../images/Plato6.jpg" alt="Plato6" height="320" width="290">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="../images/Plato1.jpg" class="d-block w-10" alt="Plato1" height="450" width="390">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../images/Plato2.jpg" class="d-block w-10" alt="Plato2" height="450" width="390">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../images/Plato3.jpg" class="d-block w-10" alt="Plato3" height="450" width="390">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../images/Plato4.jpg" class="d-block w-10" alt="Plato4" height="450" width="390">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>  
         </div> 
         </main>
     <footer>

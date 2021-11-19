@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  list-style-type: none;
 }
 
 html { /* le da una misma tipografia a todo el documento html */
@@ -29,29 +30,45 @@ nav { /* le da un fondo de color a la nav bar */
   background-color: #dfa8a8;
 }
 
-.nav_list { /* habilita flexbox en la nav bar */
-  display: flex;
-  list-style-type: none;
-  justify-content: center;
-  flex-direction: row;
-  flex-wrap: nowrap;
+.nav-list {
+justify-content: center;
 }
 
-.nav_item { /* le da la ubicacion deseada a los botones de la nav */
+.nav-item { /* le da la ubicacion deseada a los botones de la nav */
   margin: 1px 4px;
 }
 
-nav ul li:hover { /* le da efecto a los botones de la nav */
+nav div ul li:hover { /* le da efecto a los botones de la nav */
   box-shadow: 0px 2px 0px rgb(255, 255, 255);
   cursor: pointer;
   transition: all 0.5s ease;
 }
 
-nav ul li a { /* le da estilo a los botones de la nav */
+.buttonStyle:focus {
+  box-shadow: none;
+}
+
+nav div ul li a { /* le da estilo a los botones de la nav */
   text-decoration: none;
   color: rgb(255, 255, 255);
   font-family: 'Bebas Neue', normal;
   font-size: 120%;
+}
+
+a { 
+  color: inherit; 
+} 
+
+a:hover{
+  color: rgb(255, 255, 255); 
+}
+
+.navbar-toggler-icon {
+  color:aqua;
+}
+
+.navbar-toggler-icon {
+  background-image: url(../images/toggler.svg);
 }
 
 /* FOOTER */
